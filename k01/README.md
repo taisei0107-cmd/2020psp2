@@ -1,6 +1,6 @@
 # 課題1 レポート
 
-aa83988848 薗田光太郎
+bb35319025 新開　大生
 
 ## 課題
 
@@ -43,17 +43,19 @@ aa83988848 薗田光太郎
 
 ## ソースコードの説明
 
-あいうえお
+6,7行目　標本平均、標本分散のプロトタイプ宣言
+34～45行目　データが追加されるごとに平均と分散を計算している
+62～70行目　問題の指示通りの計算
 
 ## 入出力結果
 
 ```
 input the filename of sample:../sample/heights_male.csv
 the filename of sample: ../sample/heights_male.csv
-sample mean：
-sample variance：
-population mean (estimated)：
-population variance (estimated)：
+sample mean:173.888750
+sample variarance:25.361711
+population mean:173.888750
+population variarance:28.531925
 ```
 
 ## 修正履歴
