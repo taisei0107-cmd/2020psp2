@@ -38,4 +38,5 @@ No data
 ```
 
 ## 修正履歴
-
+[comment #20200722]
+- おそらく, IDに関するファイルを fopen していないにもかかわらず fclose しているため file close error になっています. 
