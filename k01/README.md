@@ -57,7 +57,7 @@ the filename of sample: ../sample/heights_male.csv
 sample mean:173.888750
 sample variarance:25.361711
 population mean:173.888750
-population variarance:28.531925
+population variarance:28.984813
 ```
 
 ## 修正履歴

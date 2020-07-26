@@ -67,7 +67,8 @@ int main(int argc, char* argv[])
 
 ## ソースコードの説明
 
-  エラーが出ます
+  24～27行　argcに4が入らない場合、errorを返す
+  40～45行　指定した数r_stdnormを使ってデータを捏造する
 ## 入出力結果
 
 以下は例です． コンパイルするときに`-DCONST_SEED`をつけるとこうなります．
@@ -86,8 +87,16 @@ Num of dummy data: 5
 ```
 
 コンパイル時に`-DCONST_SEED`をつけない場合を以下に示す．
-error
-:mu, sigma, num_dummy
+============================================
+template mean: 170.8
+template standard deviation: 5.43
+Num of dummy data: 5
+============================================
+174.93
+178.14
+176.31
+164.80
+168.73
 
 
 ## 修正履歴

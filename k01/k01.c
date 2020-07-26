@@ -48,7 +48,7 @@ int main(void)
         fputs("file close error\n",stderr);
         exit(EXIT_FAILURE);
     }
-    variarance = N*var/(N-1);
+    variarance = (N-1)*var/(N-2);
     printf("sample mean:%lf\n",ave);
     printf("sample variarance:%lf\n",var);
     printf("population mean:%lf\n",ave);

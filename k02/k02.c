@@ -10,13 +10,11 @@ int main(void)
 {
     double val;
     double y;
-    double averageA=170.8;
-    double averageB=169.7;
-    double sigmaA=5.43;
-    double sigmaB=5.5;
+    const double averageA=170.8;
+    const double averageB=169.7;
+    const double sigmaA=5.43;
+    const double sigmaB=5.5;
     double L;
-    double max_val;
-    double min_val;
     char fname[FILENAME_MAX];
     char buf[256];
     FILE* fp;
@@ -53,11 +51,9 @@ int main(void)
         exit(EXIT_FAILURE);
     }
 
-    min_val=L2;
-    max_val=L1;
 
-    printf("L_A: %f\n",max_val);
-    printf("L_B: %f\n",min_val);
+    printf("L_A: %f\n",L1);
+    printf("L_B: %f\n",L2);
 
     return 0;
 
