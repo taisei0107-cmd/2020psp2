@@ -77,3 +77,6 @@ population variarance:28.984813
 
 [comment #20200730]
 - OKです. 
+
+[comment #20200731 sonoda]
+- 課題1の完了を確認しました
