@@ -39,3 +39,6 @@ Likelihood for B：L_B: 0.000002
 ## 修正履歴
 - `averageA`などの4つは変数ではなく, 定数なので`const double`のほうが良いです. 
 - max_val, min_val を経由せず, L1, L2をそのままprintfして良いと思います. 
+
+[comment #20200730]
+- OKです.

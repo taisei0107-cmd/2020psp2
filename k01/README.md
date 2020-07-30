@@ -73,3 +73,7 @@ population variarance:28.984813
 
 [comment #20200721]
 - ループを抜けるまえに `N++` をしているので, `variance`計算時の`N`は1大きくなってしまっています. そのため, varianceの答えが少しちがいます. 
+
+
+[comment #20200730]
+- OKです. 
