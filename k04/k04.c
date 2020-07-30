@@ -22,7 +22,7 @@ int main(void)
     printf("Input the filename of sample height:");
     fgets(fname,sizeof(fname),stdin);
     fname[strlen(fname)-1]='\0';
-    printf("Input the filename of sample ID:%s\n",fname);
+    printf("the filename of sample:%s\n",fname);
     fp = fopen(fname,"r");
 
     if(fp==NULL){
@@ -40,6 +40,16 @@ int main(void)
     }
     if(fclose(fp)==EOF){
         fputs("file close error\n",stderr);
+        exit(EXIT_FAILURE);
+    }
+
+    printf("input the filename of sample ID:");
+    fgets(fname,sizeof(fname),stdin);
+    fname[strlen(fname)-1]='\0';
+    printf("the filename of sample: %s\n",fname);
+    fp=fopen(fname,"r");
+    if(fp==NULL){
+        fputs("File open error\n",stderr);
         exit(EXIT_FAILURE);
     }
 
