@@ -71,7 +71,7 @@ int main(void)
         if(data[i].ID == check_ID){
             flag=1;
             printf("ID: %d\n",data[i].ID);
-            if(data[i].gender == i){
+            if(data[i].gender == 1){
                 printf("gender:male\n");
             }
             else{
