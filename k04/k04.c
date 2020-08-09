@@ -16,7 +16,7 @@ int main(void)
     char fname[FILENAME_MAX];
     FILE* fp;
     char buf[256];
-    int i = -1;
+    int i = 0;
     int check_ID;
 
     printf("Input the filename of sample height:");
@@ -30,11 +30,9 @@ int main(void)
         exit(EXIT_FAILURE);
     }
 
+    fgets(buf,sizeof(buf),fp);
+
     while(fgets(buf,sizeof(buf),fp) !=NULL){
-        if(i== -1){
-            i++;
-            continue;
-        }
         sscanf(buf,"%d,%lf",&data[i].gender,&data[i].height);
         i++;
     }
