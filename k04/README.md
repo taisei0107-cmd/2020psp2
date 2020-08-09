@@ -53,3 +53,25 @@ No data
 
 [comment #20200731]
 - OKです. 
+
+[comment #20200804 sonoda]
+- これのif文の処理がキモいです．
+  ```
+  while(fgets(buf,sizeof(buf),fp) !=NULL){
+        if(i== -1){
+            i++;
+            continue;
+        }
+        sscanf(buf,"%d,%lf",&data[i].gender,&data[i].height);
+        i++;
+    }
+  ```
+  `i= -1;`で初期化していて，1回目のループ（i == -1)のときはsscanfを動かさないで次のループに行く，ということで1行読み飛ばすということなのだと思います．
+  しかし，パッと見では，何をしたいのかわからず，帳尻合わせにしか見えません．
+  
+  i=0;で初期化し，このif文を消し，その代わりに，while文の直前に，
+  ```
+  fgets(buf,sizeof(buf),fp);
+  ```
+  を挿入するのがよいのではないかと思います．
+  
